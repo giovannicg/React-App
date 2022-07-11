@@ -2,6 +2,9 @@
 
 Permite ver de forma resumida el clima en diversas ciudades del mundo
 
+## Api
+Para el proyecto se uso la api publica https://rapidapi.com/weatherapi/api/weatherapi-com/
+
 ## Previsualización del proyecto
 
 Puede visitar este proyecto en la siguiente url:
@@ -23,3 +26,4 @@ Iniciar el proyecto debe ejecutar el siguiente comando.
 ```javascript
 npm start
 ```
+
