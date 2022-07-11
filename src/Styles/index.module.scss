@@ -1,0 +1,119 @@
+.container {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    user-select: none;
+}
+
+.loaderSkeletonContainer {
+    display: flex;
+    flex-direction: column;
+
+    >span {
+        display: block;
+        margin: 0;
+        padding: 0;
+        margin-bottom: -1.2rem;
+        line-height: normal;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: max-content;
+    padding: 0.5rem;
+    background: #fff;
+    border-radius: 5px;
+
+    @media screen and (max-width:820px) {
+        position: static;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+.weatherList {
+    padding: 0;
+    margin: 0;
+}
+
+.weatherDay {
+    background: rgba(238, 238, 238, 0.637);
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+
+    >.weatherInfo {
+        cursor: auto;
+    }
+
+    &:hover {
+        background: #eee;
+    }
+
+    &::before {
+        display: none;
+    }
+}
+
+.weatherDayDark {
+    background-color: #2a272796;
+
+    &:hover {
+        background: rgba(39, 37, 37, 0.486)
+    }
+
+    .weatherInfo:not(.nohover):hover {
+        background: #07070796 !important;
+    }
+}
+
+.weatherInfoList {
+    @media screen and (max-width:650px) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+.weatherInfo {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    cursor: help;
+
+    &:not(.nohover):hover {
+        background: rgb(207, 207, 207);
+    }
+}
+
+.weatherDayLoader {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.loaderSkeletonFooter {
+    @extend .footer;
+    right: 0;
+    left: unset;
+    padding: 0;
+    margin-right: 1rem;
+    margin-bottom: 1.2rem;
+    width: auto;
+}
+
+.toggleThemeContainer {
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+}
