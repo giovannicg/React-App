@@ -2,6 +2,9 @@
 
 Permite ver de forma resumida el clima en diversas ciudades del mundo
 
+Link Video Como deployar en Vercel
+[Presiona aquí](https://www.loom.com/share/66d3f102c231401a9e7fbed9066429e1)
+
 ## Api
 Para el proyecto se uso la api publica https://rapidapi.com/weatherapi/api/weatherapi-com/
 
